@@ -35,36 +35,36 @@ theme:
 
 # 扩展 / Extensions
 markdown_extensions:
-- admonition
-- md_in_html
-- codehilite:
-    guess_lang: false
-- def_list
-- footnotes
-- meta
-- toc:
-    permalink: true
-- pymdownx.arithmatex
-- pymdownx.caret
-- pymdownx.critic
-- pymdownx.details
-- pymdownx.emoji:
-    emoji_index: !!python/name:materialx.emoji.twemoji ''
-    emoji_generator: !!python/name:materialx.emoji.to_svg ''
-- pymdownx.highlight
-- pymdownx.inlinehilite
-- pymdownx.keys
-- pymdownx.magiclink
-- pymdownx.mark
-- pymdownx.smartsymbols
-- pymdownx.superfences:
-    custom_fences:
-    - name: mermaid
-      class: mermaid
-      format: !!python/name:pymdownx.superfences.fence_code_format ''
-- pymdownx.tasklist:
-    custom_checkbox: true
-- pymdownx.tilde
+  - admonition
+  - md_in_html
+  - codehilite:
+      guess_lang: false
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji ''
+      emoji_generator: !!python/name:materialx.emoji.to_svg ''
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format ''
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 plugins:
   - search:
@@ -73,13 +73,19 @@ plugins:
         - en
   - minify:
       minify_html: true
+  - mkdocs-jupyter
 
 nav:
   - 首页:
     - index.md
     - mkdocs-help.md
+  - Jupyter 支持:
+    - "jupyter/index.md"
+    - "jupyter/Animations-Using-clear-output.ipynb"
+    - "jupyter/Cell-Magics.ipynb"
   - 版块:
     - section/article.md
     - 子版块:
       - section/subsection/article.md
+  
   
