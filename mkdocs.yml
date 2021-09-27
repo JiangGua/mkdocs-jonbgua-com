@@ -1,0 +1,85 @@
+# 站点信息
+site_name: "Mkdocs 一键部署"
+site_description: "在 Netlify 上快速部署 Mkdocs"
+site_author: "Jonbgua"
+site_url: "https://mkdocs.jonbgua.com/"
+docs_dir: "docs"
+
+# Copyright
+copyright: "&copy; 2021 Jonbgua"
+
+# Material 主题设置
+theme:
+  name: "material"
+  language: "zh"
+  shortcuts:
+    help: 191 # ?
+    next: 78 # n
+    previous: 80 # p
+    search: 83 # s
+  # 颜色: https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
+  palette:
+    primary: "white"    # 主色
+    accent: "red"    # 强调色
+    scheme: preference
+  features:
+    - tabs
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - search.suggest
+    - search.highlight
+    - search.share
+  font:
+    text: Noto Sans
+    code: Source Code Pro
+
+# 扩展 / Extensions
+markdown_extensions:
+- admonition
+- md_in_html
+- codehilite:
+    guess_lang: false
+- def_list
+- footnotes
+- meta
+- toc:
+    permalink: true
+- pymdownx.arithmatex
+- pymdownx.caret
+- pymdownx.critic
+- pymdownx.details
+- pymdownx.emoji:
+    emoji_index: !!python/name:materialx.emoji.twemoji ''
+    emoji_generator: !!python/name:materialx.emoji.to_svg ''
+- pymdownx.highlight
+- pymdownx.inlinehilite
+- pymdownx.keys
+- pymdownx.magiclink
+- pymdownx.mark
+- pymdownx.smartsymbols
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid
+      format: !!python/name:pymdownx.superfences.fence_code_format ''
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.tilde
+
+plugins:
+  - search:
+      lang:
+        - ja
+        - en
+  - minify:
+      minify_html: true
+
+nav:
+  - 首页:
+    - index.md
+    - mkdocs-help.md
+  - 版块:
+    - section/article.md
+    - 子版块:
+      - section/subsection/article.md
+  
