@@ -67,6 +67,7 @@ markdown_extensions:
   - pymdownx.tilde
 
 extra_javascript:
+  - 'https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js'
   - 'https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js'
   - 'js/config.js'
   - 'https://polyfill.io/v3/polyfill.min.js?features=es6'
