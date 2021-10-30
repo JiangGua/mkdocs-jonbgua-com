@@ -83,10 +83,10 @@ plugins:
       minify_html: true
   - mkdocs-jupyter
   - encryptcontent:
-    # global_password: "GLOBAL_PASSWORD"
-    # remember_password: false
-    reload_scripts:
-      - 'js/config.js'
+      # global_password: "GLOBAL_PASSWORD"
+      # remember_password: false
+      reload_scripts:
+        - '/js/config.js'
     
 
 nav:
