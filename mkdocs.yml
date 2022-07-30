@@ -68,11 +68,11 @@ markdown_extensions:
 
 extra_javascript:
   # 解密后重载 JS 脚本要用到 jQuery
-  - 'https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js'
-  - 'https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js'
+  - 'https://lib.baomitu.com/jquery/3.6.0/jquery.min.js'
+  - 'https://lib.baomitu.com/pangu/4.0.7/pangu.min.js'
   - 'js/config.js'
   - 'https://polyfill.io/v3/polyfill.min.js?features=es6'
-  - 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  - 'https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.min.js'
 
 plugins:
   - search:
