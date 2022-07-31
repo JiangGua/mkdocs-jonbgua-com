@@ -6,7 +6,7 @@ site_url: "https://mkdocs.jonbgua.com/"
 docs_dir: "docs"
 
 # Copyright
-copyright: "&copy; 2021 Jonbgua"
+copyright: "&copy; 2022 Jonbgua"
 
 # Material 主题设置
 theme:
@@ -92,6 +92,7 @@ plugins:
 nav:
   - 首页:
     - index.md
+    - 常见问题速查: help.md
     - mkdocs-help.md
   - 版块:
     - section/article.md
